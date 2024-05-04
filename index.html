@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Major+Mono+Display&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<script defer type="module" src="/src/main.ts"></script>
+		<title>What is Minimal Design?</title>
+	</head>
+	<body class="overflow-x-hidden">
+		<nav id="nav" class="isolate bg-white">
+			<div class="relative z-10 mx-auto flex w-clamp items-center justify-between px-3 py-2 sm:px-6 sm:py-2.5">
+				<h1 class="leading-[0]"><span class="material-symbols-rounded text-4xl/none">minimize</span></h1>
+				<button
+					id="menu-button"
+					class="group relative rounded p-1 text-center leading-[0] focus:outline-dark focus-visible:outline-dark"
+				>
+					<span
+						id="menu-open-button"
+						class="material-symbols-rounded text-3xl/none group-hover:text-black/70"
+					>
+						menu
+					</span>
+					<span
+						id="menu-close-button"
+						class="material-symbols-rounded absolute left-1 top-1 text-3xl/none opacity-0 group-hover:text-black/70"
+					>
+						close
+					</span>
+				</button>
+			</div>
+			<div
+				id="menu"
+				data-open="false"
+				class="relative -z-10 h-0 overflow-hidden bg-dark font-majorMono text-light transition-[height] duration-[400ms]"
+			>
+				<ul
+					class="invisible mx-auto flex w-clamp flex-col items-end justify-center px-4 pb-20 pt-10 sm:px-6 [&>li]:py-6 [&_a:hover]:text-accent/80 [&_a]:rounded [&_a]:px-2 [&_a]:py-2 [&_a]:text-xl/none [&_a]:font-black [&_a]:transition-[color,opacity]"
+				>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Minimal</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<section id="hero-section" class="relative h-[calc(100vh_-_58px)] max-h-[1240px]">
+				<div class="h-full bg-[url('/imgs/hero_img.jpeg')] bg-cover bg-[50%_70%] brightness-90"></div>
+				<div class="absolute bottom-0 left-0 right-0">
+					<div class="mx-auto w-clamp px-6 pb-16 text-right text-white sm:px-10">
+						<h4 class="pb-4 text-lg font-normal tracking-widest text-accent underline sm:text-xl">
+							community and inspiration
+						</h4>
+						<h1 class="text-2xl font-extralight sm:text-3xl">
+							WHAT ARE <span class="font-majorMono font-black">MINIMALIST</span><br />DESIGNS?
+						</h1>
+					</div>
+				</div>
+			</section>
+			<section id="gallery" class="isolate">
+				<div class="mx-auto flex w-clamp flex-col-reverse items-stretch justify-center sm:flex-row">
+					<div class="relative flex flex-1 items-center justify-center px-7 py-0 md:p-14">
+						<div
+							class="absolute right-0 top-0 -z-10 h-full w-full origin-right scale-x-[10] bg-accent"
+						></div>
+						<img
+							class="mx-auto aspect-[4/5] w-full max-w-[380px] object-cover p-8 sm:p-0 md:p-4"
+							src="/imgs/image_1dot1.jpeg"
+							alt="IMAGE"
+						/>
+					</div>
+					<div class="flex flex-1 flex-col justify-center px-7 py-14 md:p-14">
+						<h4 class="text-lg tracking-widest underline md:text-2xl">interior<br />details</h4>
+						<img
+							class="my-6 aspect-square w-7/12 max-w-[200px] object-cover"
+							src="/imgs/image_1dot2.jpeg"
+							alt="IMAGE"
+						/>
+						<p class="text-sm text-black/60 sm:text-xs md:text-[14.5px] md:leading-6">
+							Temporibus tempora, esse eligendi aliquam beatae cum iure! Quisquam deserunt ratione vero
+							consequatur quia impedit deleniti eaque tenetur necessitatibus magnam eius veniam,
+							repellendus id fugiat dolorum sapiente sed iure corrupti!
+						</p>
+					</div>
+				</div>
+				<div class="mx-auto flex w-clamp flex-col-reverse items-stretch justify-center sm:flex-row-reverse">
+					<div class="relative flex flex-1 items-center justify-center px-7 py-0 md:p-14">
+						<div class="absolute left-0 top-0 -z-10 h-full w-full origin-left scale-x-[10] bg-accent"></div>
+						<img
+							class="mx-auto aspect-[4/5] w-full max-w-[380px] object-cover p-8 sm:p-0 md:p-4"
+							src="/imgs/image_2dot1.jpeg"
+							alt="IMAGE"
+						/>
+					</div>
+					<div class="flex flex-1 flex-col justify-center px-7 py-14 sm:items-end md:p-14">
+						<h4 class="text-lg tracking-widest underline sm:text-end md:text-2xl">
+							needlework<br />lessons
+						</h4>
+						<img
+							class="my-6 aspect-square w-7/12 max-w-[200px] object-cover"
+							src="/imgs/image_2dot2.jpeg"
+							alt="IMAGE"
+						/>
+						<p class="text-sm text-black/60 sm:text-end sm:text-xs md:text-[14.5px] md:leading-6">
+							Quis blanditiis perspiciatis quaerat optio mollitia laudantium corporis libero expedita
+							porro quia. Voluptate porro ad corporis pariatur ipsa voluptatem reiciendis animi enim?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, facilis.
+						</p>
+					</div>
+				</div>
+				<div class="mx-auto hidden w-clamp flex-row items-stretch justify-center sm:flex">
+					<div class="relative flex flex-1 items-center justify-center px-7 py-0 md:p-14">
+						<div
+							class="absolute right-0 top-0 -z-10 h-full w-full origin-right scale-x-[10] bg-accent"
+						></div>
+						<img
+							class="mx-auto aspect-[4/5] w-full max-w-[380px] object-cover p-8 sm:p-0 md:p-4"
+							src="/imgs/image_3dot1.jpeg"
+							alt="IMAGE"
+						/>
+					</div>
+					<div class="flex flex-1 flex-col justify-center px-7 py-14 md:p-14">
+						<h4 class="text-lg tracking-widest underline md:text-2xl">thoughtfull<br />work</h4>
+						<img
+							class="my-6 aspect-square w-7/12 max-w-[200px] object-cover"
+							src="/imgs/image_3dot2.jpeg"
+							alt="IMAGE"
+						/>
+						<p class="text-sm text-black/60 sm:text-xs md:text-[14.5px] md:leading-6">
+							Cum molestias excepturi id, facilis pariatur expedita voluptatibus quisquam necessitatibus
+							eveniet nihil labore commodi ad vero, vitae corporis. Voluptatibus molestiae officia soluta.
+							Lorem ipsum dolor sit amet consectetur adipisicing.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="steps" class="mx-auto w-clamp divide-y-2 divide-accent p-4 sm:p-8 md:p-12">
+				<h3 class="px-4 py-8 font-majorMono text-xl font-black sm:p-8 md:p-12 md:text-2xl">
+					Minimalism <br />Approach
+				</h3>
+				<div class="flex flex-col justify-center gap-1 px-4 py-12 sm:px-8 md:flex-row md:p-12">
+					<div class="min-w-[220px] flex-[1_1_20%]">
+						<p class="font-majorMono text-lg font-semibold">01</p>
+						<h4 class="font-majorMono text-lg font-semibold sm:text-xl md:text-2xl">Declutter</h4>
+					</div>
+					<div class="flex-[1_1_80%]">
+						<p class="ms-2 text-xs text-dark/60 sm:text-sm">
+							Voluptatum quae facilis veritatis, corrupti pariatur iure incidunt odit quibusdam aliquam
+							fugit impedit, modi aliquid, amet praesentium voluptas magnam minima doloribus
+							reprehenderit. Fugit dignissimos totam eligendi? Quod fuga tenetur est odit, dolor molestias
+							placeat.
+						</p>
+					</div>
+				</div>
+				<div class="flex flex-col justify-center gap-1 px-4 py-12 sm:px-8 md:flex-row md:p-12">
+					<div class="min-w-[220px] flex-[1_1_20%]">
+						<p class="font-majorMono text-lg font-semibold">02</p>
+						<h4 class="font-majorMono text-lg font-semibold sm:text-xl md:text-2xl">Reorganize</h4>
+					</div>
+					<div class="flex-[1_1_80%]">
+						<p class="ms-2 text-xs text-dark/60 sm:text-sm">
+							Cupiditate fuga dolorum similique deleniti voluptate explicabo nesciunt vitae veniam tempora
+							suscipit aperiam repellat repellendus ab repudiandae obcaecati enim sed officiis sunt ipsa,
+							voluptatem aliquid beatae totam? Minus non velit sunt molestias expedita odit, vitae,
+							doloribus dolores eaque, tempore iusto.
+						</p>
+					</div>
+				</div>
+				<div class="flex flex-col justify-center gap-1 px-4 py-12 sm:px-8 md:flex-row md:p-12">
+					<div class="min-w-[220px] flex-[1_1_20%]">
+						<p class="font-majorMono text-lg font-semibold">03</p>
+						<h4 class="font-majorMono text-lg font-semibold sm:text-xl md:text-2xl">Repeat</h4>
+					</div>
+					<div class="flex-[1_1_80%]">
+						<p class="ms-2 text-xs text-dark/60 sm:text-sm">
+							Sed architecto earum molestiae, consequuntur corrupti explicabo non deleniti ipsam ratione
+							aliquid nam, neque enim doloribus, odio molestias errort expedita! Incidunt, sequi provident
+							nihil aut ut necessitatibus suscipit quae error est vero porro tenetur magni blanditiis?
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="our-store" class="bg-accent">
+				<div class="isolate mx-auto flex w-clamp flex-col items-stretch justify-center sm:flex-row">
+					<div class="flex flex-[1_1_50%] items-center justify-center overflow-hidden">
+						<img
+							class="mx-auto aspect-[4/5] h-full max-h-[450px] w-full object-cover sm:max-h-[580px]"
+							src="/imgs/shop_image.jpeg"
+							alt="IMAGE"
+						/>
+					</div>
+					<div class="flex flex-[1_1_50%] flex-col justify-center px-8 py-12 sm:px-8 md:p-12">
+						<h4 class="mb-12 text-3xl underline md:text-4xl">Our Store</h4>
+						<p class="text-sm text-black/60">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis, enim temporibus
+							tempore a unde beatae nihil dicta quo nam!
+						</p>
+						<span
+							class="material-symbols-rounded mt-12 w-min cursor-pointer text-4xl transition-colors hover:text-dark/60"
+						>
+							keyboard_double_arrow_right
+						</span>
+					</div>
+				</div>
+			</section>
+			<section id="concept" class="bg-white">
+				<div
+					class="mx-auto w-clamp bg-[url('/imgs/last\_image.jpg')] bg-cover bg-[60%_50%] px-4 py-16 sm:px-8 sm:py-32 md:px-12"
+				>
+					<h4 class="text-3xl font-light md:text-4xl">
+						Create a <span class="font-majorMono font-semibold">NEW</span> <br />Concept
+					</h4>
+					<p class="my-10 max-w-[30ch] text-sm text-black/60 sm:my-14 sm:max-w-[45ch] md:text-base">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel a laboriosam magnam maiores nihil
+						totam.
+					</p>
+					<div class="flex items-center gap-4">
+						<button
+							class="border-2 border-dark bg-dark px-3 py-2 text-xs text-white transition-colors hover:bg-accent hover:text-dark focus:bg-accent focus:text-dark focus-visible:bg-accent focus-visible:text-dark sm:px-4 sm:py-2 md:text-sm"
+						>
+							View Collection
+						</button>
+						<button
+							class="border-2 border-dark px-3 py-2 text-xs transition-colors hover:bg-accent focus:bg-accent focus-visible:bg-accent sm:px-4 sm:py-2 md:text-sm"
+						>
+							Shop Now
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="min-h-[20rem] bg-black">
+			<div class="mx-auto flex w-clamp flex-col items-center justify-center pt-14">
+				<p class="font-majorMono text-3xl font-semibold text-accent">FOOTER</p>
+				<a
+					class="mt-2 rounded px-1 font-majorMono font-medium text-accent hover:text-white"
+					href="https://nicepage.com/website-design/preview/make-your-home-special-182267?device=desktop"
+					target="_blank"
+				>
+					Website Template
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>

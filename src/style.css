@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body {
+		@apply min-w-[320px] bg-white font-openSans text-dark;
+		color-scheme: dark;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-roboto;
+	}
+
+	:focus-visible {
+		@apply outline outline-2 outline-accent;
+	}
+
+	::-webkit-scrollbar {
+		@apply h-1.5 w-1.5;
+	}
+	::-webkit-scrollbar-track {
+		@apply bg-white;
+	}
+	::-webkit-scrollbar-thumb {
+		@apply rounded-full bg-gray-400;
+	}
+
+	::selection {
+		@apply bg-black text-slate-50;
+	}
+}
+
+@layer components {
+	.material-symbols-outlined {
+		font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 200, "opsz" 48;
+	}
+}
