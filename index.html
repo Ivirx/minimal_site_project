@@ -16,8 +16,8 @@
 		/>
 		
 		<title>What is Minimal Design?</title>
-		<script type="module" crossorigin src="/minimal_site_project/assets/index-6539de4f.js"></script>
-		<link rel="stylesheet" href="/minimal_site_project/assets/index-cf15e182.css">
+		<script type="module" crossorigin src="/minimal_site_project/assets/index-84cff4f3.js"></script>
+		<link rel="stylesheet" href="/minimal_site_project/assets/index-eff9c441.css">
 	</head>
 	<body class="overflow-x-hidden">
 		<nav id="nav" class="isolate bg-white">
@@ -57,7 +57,13 @@
 		</nav>
 		<main>
 			<section id="hero-section" class="relative h-[calc(100vh_-_58px)] max-h-[1240px]">
-				<div class="h-full bg-[url('hero_img.jpeg')] bg-cover bg-[50%_70%] brightness-90"></div>
+				<div class="h-full">
+					<img
+						class="h-full w-full object-cover object-[50%_70%] brightness-90"
+						src="hero_img.jpeg"
+						alt="hero-img"
+					/>
+				</div>
 				<div class="absolute bottom-0 left-0 right-0">
 					<div class="mx-auto w-clamp px-6 pb-16 text-right text-white sm:px-10">
 						<h4 class="pb-4 text-lg font-normal tracking-widest text-accent underline sm:text-xl">
@@ -216,9 +222,12 @@
 				</div>
 			</section>
 			<section id="concept" class="bg-white">
-				<div
-					class="mx-auto w-clamp bg-[url('last_image.jpg')] bg-cover bg-[60%_50%] px-4 py-16 sm:px-8 sm:py-32 md:px-12"
-				>
+				<div class="relative isolate mx-auto w-clamp px-4 py-16 sm:px-8 sm:py-32 md:px-12">
+					<img
+						class="absolute inset-0 -z-50 h-full w-full object-cover object-[60%_60%]"
+						src="last_image.jpg"
+						alt="footer_image"
+					/>
 					<h4 class="text-3xl font-light md:text-4xl">
 						Create a <span class="font-majorMono font-semibold">NEW</span> <br />Concept
 					</h4>
